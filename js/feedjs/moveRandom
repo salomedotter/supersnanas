@@ -1,0 +1,5 @@
+class RandomMover {
+  constructor(parent) {
+    this.parent = parent;
+  }
+}

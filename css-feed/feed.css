@@ -1,0 +1,195 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: vh;
+
+  overflow: max-height;
+}
+.scroll-content > div {
+  /* background: #c0c0c0; */
+  /* height: 40px; */
+  margin-bottom: 5px;
+}
+.scroll-content
+{
+height:300px;
+overflow:hidden;
+}
+
+body {
+  background: linear-gradient(-45deg, #ff4fb6, #2cc7ff, #1fff1f);
+  background-size: 100% 100%;
+  animation: gradient 5s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.titre{
+    font-family: 'Cherish', cursive;
+    font-family: 'Fugaz One', cursive;
+    font-size: 8rem;
+    text-align: center;
+    font-style: italic;
+    color:rgb(255, 255, 215);
+    /* -webkit-text-stroke: 3px hotpink; */
+    -webkit-text-stroke: 2px rgb(255, 105, 113);
+    letter-spacing: -7px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* position: absolute; */
+    top: 10px; 
+    left: 20px;
+    
+     /* animation: blur .75s ease-out infinite;
+    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff; 
+    -webkit-text-stroke: 4px navy; */
+  }
+  
+  @keyframes blur {
+    from {
+      text-shadow:0px 0px 10px #fff,
+        0px 0px 10px #fff, 
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 50px #fff,
+        0px 0px 50px #fff,
+        0px 0px 50px pink,
+        0px 0px 150px #f80000,
+        0px 10px 100px pink,
+        0px 10px 100px#f80000,
+        0px 10px 100px pink,
+        0px 10px 100px #f80000,
+        0px -10px 100px pink,
+        0px -10px 100px#f80000;
+    }
+  }
+
+  /* HOVER ON BELLE */
+  .png-size-belle{
+    width: 100px;
+    height: 120px;
+    top:50%;
+    left:50%;
+    position:fixed;
+    transform: translate3d(-50%, -50%, 0);
+    cursor: pointer; 
+}
+
+.png-size-bulle{
+  width: 150px;
+  height: 100px;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform: translate3d(-50%, -50%, 0);
+  cursor: pointer;
+}
+
+.png-size-rebelle{
+  width: 120px;
+  height: 100px;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform: translate3d(-50%, -50%, 0);
+  cursor: pointer;
+}
+
+.hide {
+    display: none;
+  }
+
+  .png-size-belle:hover + .hide {
+    display: block;
+    font-family: 'Cherish', cursive;
+    font-family: 'Fugaz One', cursive;
+    font-size: 3rem;
+    color: hotpink;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+  }
+
+  .png-size-bulle:hover + .hide {
+    display: block;
+    font-family: 'Cherish', cursive;
+    font-family: 'Fugaz One', cursive;
+    font-size: 3rem;
+    color: skyblue;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+  }
+
+.phobu{
+  width: 300px;
+  height: 180px;
+  top:50%;
+  left:50%;
+  position: absolute;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.phobu:hover+ .hide {
+  display: block;
+  font-family: 'Cherish', cursive;
+  font-family: 'Fugaz One', cursive;
+  font-size: 3rem;
+  color: skyblue;
+  -webkit-text-stroke: 2px rgb(255, 255, 255);
+}
+
+.bulle-h{
+  width: 120px;
+  height: 100px;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform: translate3d(-50%, -50%, 0);
+
+}
+
+#bull{
+  width: 120px;
+  height: 100px;
+  position: relative;
+  top:30px;
+  transform: translate(0,0);
+}
+
+.mover{
+  height:300px
+}
+
+.mover > svg{
+  position: relative; 
+  top:0px;
+  left:0px;
+  /* top:50%;
+  left:50%; */
+}
+
+.bulleMoving {
+  width:100px;
+}
+
+.bulle-h:hover+.hide {
+  display: block;
+  font-family: 'Cherish', cursive;
+  font-family: 'Fugaz One', cursive;
+  font-size: 3rem;
+  color: skyblue;
+  -webkit-text-stroke: 2px rgb(255, 255, 255);
+}
